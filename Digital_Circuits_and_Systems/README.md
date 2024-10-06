@@ -1,6 +1,7 @@
 # Digital Circuits and Systems 2021
 * Notion:
   * The source documents and the testebenches/test patterns of the practices are copied copied from [krz-max/Digital-Circuits-and-Systems](https://github.com/krz-max/Digital-Circuits-and-Systems).
+  * The practices are simuated with Modelsim - Intel FPGA Starter Edition 10.5b (Quartus Prime 18.1).
 ## Contents:
 * Lab
 * HW
