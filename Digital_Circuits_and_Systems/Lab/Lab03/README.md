@@ -5,4 +5,4 @@
 * Block Diagram:
 * Waveform:
   ![](https://github.com/roy-tsai-tw/Digital_Circuits_and_Systems/blob/main/Digital_Circuits_and_Systems/Lab/Lab03/Doc/waveform.PNG)
-* Due: 2024/10/6
+* Completion date: 2024/10/6
