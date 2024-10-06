@@ -1,0 +1,983 @@
+vsim work.TESTBENCH
+# vsim work.TESTBENCH 
+# Start time: 19:29:06 on Oct 06,2024
+# Loading sv_std.std
+# Loading work.TESTBENCH
+# Loading work.Maxmin
+# Loading work.PATTERN
+add wave -position insertpoint  \
+sim:/TESTBENCH/in_num \
+sim:/TESTBENCH/in_valid \
+sim:/TESTBENCH/rst_n \
+sim:/TESTBENCH/clk \
+sim:/TESTBENCH/out_max \
+sim:/TESTBENCH/out_min \
+sim:/TESTBENCH/out_valid
+run -all
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# ------------------------------------------------------------------------
+#                              FAIL! 		                               
+#           out_valid is not pulled high after 1000 CYCLE                 
+# -----------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(94)
+#    Time: 10275 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task wait_out_valid at PATTERN.sv line 94
+restart -f
+run -all
+# GetModuleFileName: §ä¤£¨ì«ü©wªº¼Ò²Õ¡C
+# 
+# 
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# ------------------------------------------------------------------------
+#                              FAIL! 		                               
+#           out_valid is not pulled high after 1000 CYCLE                 
+# -----------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(94)
+#    Time: 10275 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task wait_out_valid at PATTERN.sv line 94
+restart -f
+run -all
+# GetModuleFileName: §ä¤£¨ì«ü©wªº¼Ò²Õ¡C
+# 
+# 
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# ------------------------------------------------------------------------
+#                              FAIL! 		                               
+#           out_valid is not pulled high after 1000 CYCLE                 
+# -----------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(94)
+#    Time: 10275 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task wait_out_valid at PATTERN.sv line 94
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:32:31 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:32:31 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+run -all
+# Break key hit
+# Simulation stop requested.
+restart -f
+
+
+
+
+
+restart -f
+# Loading work.TESTBENCH
+# Loading work.Maxmin
+# Loading work.PATTERN
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:33:47 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:33:47 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+run -all
+# GetModuleFileName: §ä¤£¨ì«ü©wªº¼Ò²Õ¡C
+# 
+# 
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# -----------------------------------------------------------------------------------------------------
+#            WRONG ANSWER FAIL!                                                                        
+#            Pattern No.   0                                                                  
+#            Your answer max:254 min:  0               					           
+#            Gold answer max:254 min: 17               					     
+# -----------------------------------------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(151)
+#    Time: 275 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task check_ans at PATTERN.sv line 151
+restart -f
+# Loading work.TESTBENCH
+# Loading work.Maxmin
+# Loading work.PATTERN
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:34:30 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:34:30 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+run -all
+# GetModuleFileName: §ä¤£¨ì«ü©wªº¼Ò²Õ¡C
+# 
+# 
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# -----------------------------------------------------------------------------------------------------
+#            WRONG ANSWER FAIL!                                                                        
+#            Pattern No.   0                                                                  
+#            Your answer max:254 min:  0               					           
+#            Gold answer max:254 min: 17               					     
+# -----------------------------------------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(151)
+#    Time: 275 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task check_ans at PATTERN.sv line 151
+restart -f
+# Loading work.TESTBENCH
+# Loading work.Maxmin
+# Loading work.PATTERN
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:35:46 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:35:46 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+run -all
+# GetModuleFileName: §ä¤£¨ì«ü©wªº¼Ò²Õ¡C
+# 
+# 
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# -----------------------------------------------------------------------------------------------------
+#            WRONG ANSWER FAIL!                                                                        
+#            Pattern No.   0                                                                  
+#            Your answer max:254 min:  0               					           
+#            Gold answer max:254 min: 17               					     
+# -----------------------------------------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(151)
+#    Time: 275 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task check_ans at PATTERN.sv line 151
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:36:21 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:36:22 on Oct 06,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+add wave -position insertpoint  \
+sim:/TESTBENCH/I_Maxmin/max_reg \
+sim:/TESTBENCH/I_Maxmin/min_reg
+restart -f
+# Loading work.TESTBENCH
+# Loading work.Maxmin
+# Loading work.PATTERN
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:27 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:37:27 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+run -all
+# GetModuleFileName: §ä¤£¨ì«ü©wªº¼Ò²Õ¡C
+# 
+# 
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# -----------------------------------------------------------------------------------------------------
+#            WRONG ANSWER FAIL!                                                                        
+#            Pattern No.   0                                                                  
+#            Your answer max:254 min:  0               					           
+#            Gold answer max:254 min: 17               					     
+# -----------------------------------------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(151)
+#    Time: 275 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task check_ans at PATTERN.sv line 151
+restart -f
+# Loading work.TESTBENCH
+# Loading work.Maxmin
+# Loading work.PATTERN
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:39:13 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:39:14 on Oct 06,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+run -all
+# GetModuleFileName: §ä¤£¨ì«ü©wªº¼Ò²Õ¡C
+# 
+# 
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# -----------------------------------------------------------------------------------------------------
+#            WRONG ANSWER FAIL!                                                                        
+#            Pattern No.   0                                                                  
+#            Your answer max:254 min:  0               					           
+#            Gold answer max:254 min: 17               					     
+# -----------------------------------------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(151)
+#    Time: 275 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task check_ans at PATTERN.sv line 151
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:40:23 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:40:23 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+run -all
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# -----------------------------------------------------------------------------------------------------
+#            WRONG ANSWER FAIL!                                                                        
+#            Pattern No.   1                                                                  
+#            Your answer max:254 min:  0               					           
+#            Gold answer max:223 min: 18               					     
+# -----------------------------------------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(151)
+#    Time: 535 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task check_ans at PATTERN.sv line 151
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:42:04 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:42:04 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+run -all
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# -----------------------------------------------------------------------------------------------------
+#            WRONG ANSWER FAIL!                                                                        
+#            Pattern No.   2                                                                  
+#            Your answer max:254 min:  0               					           
+#            Gold answer max:247 min: 32               					     
+# -----------------------------------------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(151)
+#    Time: 815 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task check_ans at PATTERN.sv line 151
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:42:44 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:42:44 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+run -all
+# [38;2;252;238;238m                                                                                                                                           
+# [38;2;252;238;238m                                                                                                :L777777v7.                                
+# [31m  i:..::::::i.      :::::         ::::    .:::.       [38;2;252;238;238m                                       .vYr::::::::i7Lvi                             
+# [31m  BBBBBBBBBBBi     iBBBBBL       .BBBB    7BBB7       [38;2;252;238;238m                                      JL..[38;2;252;172;172m:r777v777i::[38;2;252;238;238m.ijL                           
+# [31m  BBBB.::::ir.     BBB:BBB.      .BBBv    iBBB:       [38;2;252;238;238m                                    :K: [38;2;252;172;172miv777rrrrr777v7:.[38;2;252;238;238m:J7                         
+# [31m  BBBQ            :BBY iBB7       BBB7    :BBB:       [38;2;252;238;238m                                   :d [38;2;252;172;172m.L7rrrrrrrrrrrrr77v: [38;2;252;238;238miI.                       
+# [31m  BBBB            BBB. .BBB.      BBB7    :BBB:       [38;2;252;238;238m                                  .B [38;2;252;172;172m.L7rrrrrrrrrrrrrrrrr7v..[38;2;252;238;238mBr                      
+# [31m  BBBB:r7vvj:    :BBB   gBBs      BBB7    :BBB:       [38;2;252;238;238m                                  S:[38;2;252;172;172m v7rrrrrrrrrrrrrrrrrrr7v. [38;2;252;238;238mB:                     
+# [31m  BBBBBBBBBB7    BBB:   .BBB.     BBB7    :BBB:       [38;2;252;238;238m                                 .D [38;2;252;172;172mi7rrrrrrr777rrrrrrrrrrr7v. [38;2;252;238;238mB.                    
+# [31m  BBBB    ..    iBBBBBBBBBBBP     BBB7    :BBB:       [38;2;252;238;238m                                 rv[38;2;252;172;172m v7rrrrrr7rirv7rrrrrrrrrr7v [38;2;252;238;238m:I                    
+# [31m  BBBB          BBBBi7vviQBBB.    BBB7    :BBB.       [38;2;252;238;238m                                 2i[38;2;252;172;172m.v7rrrrrr7i  :v7rrrrrrrrrrvi [38;2;252;238;238mB:                   
+# [31m  BBBB         rBBB.      BBBQ   .BBBv    iBBB2ir777L7[38;2;252;238;238m                                 2i.[38;2;252;172;172mv7rrrrrr7v [38;2;252;238;238m:..[38;2;252;172;172mv7rrrrrrrrr77 [38;2;252;238;238mrX                   
+# [31m .BBBB        :BBBB       BBBB7  .BBBB    7BBBBBBBBBBB[38;2;252;238;238m                                 Yv [38;2;252;172;172mv7rrrrrrrv.[38;2;252;238;238m.B [38;2;252;172;172m.vrrrrrrrrrrL.[38;2;252;238;238m:5                   
+# [31m  . ..        ....         ...:   ....    ..   .......[38;2;252;238;238m                                 .q [38;2;252;172;172mr7rrrrrrr7i [38;2;252;238;238mPv [38;2;252;172;172mi7rrrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                        Lr [38;2;252;172;172m77rrrrrr77 [38;2;252;238;238m:B. [38;2;252;172;172mv7rrrrrrrrv.[38;2;252;238;238m:S                   
+# [38;2;252;238;238m                                                                                         B: [38;2;252;172;172m7v7rrrrrv. [38;2;252;238;238mBY [38;2;252;172;172mi7rrrrrrr7v [38;2;252;238;238miK                   
+# [38;2;252;238;238m                                                                              .::rriii7rir7. [38;2;252;172;172m.r77777vi [38;2;252;238;238m7B  [38;2;252;172;172mvrrrrrrr7r [38;2;252;238;238m2r                   
+# [38;2;252;238;238m                                                                       .:rr7rri::......    .     [38;2;252;172;172m.:i7s [38;2;252;238;238m.B. [38;2;252;172;172mv7rrrrr7L..[38;2;252;238;238mB                    
+# [38;2;252;238;238m                                                        .::7L7rriiiirr77rrrrrrrr72BBBBBBBBBBBBvi:..  [38;2;252;172;172m.  [38;2;252;238;238mBr [38;2;252;172;172m77rrrrrvi [38;2;252;238;238mKi                    
+# [38;2;252;238;238m                                                    :rv7i::...........    .:i7BBBBQbPPPqPPPdEZQBBBBBr:.[38;2;252;238;238m ii [38;2;252;172;172mvvrrrrvr [38;2;252;238;238mvs                     
+# [38;2;252;238;238m                    .S77L.                      .rvi:. ..:r7QBBBBBBBBBBBgri.    .:BBBPqqKKqqqqPPPPPEQBBBZi  [38;2;252;172;172m:777vi [38;2;252;238;238mvI                      
+# [38;2;252;238;238m                    B: ..Jv                   isi. .:rBBBBBQZPPPPqqqPPdERBBBBBi.    :BBRKqqqqqqqqqqqqPKDDBB:  [38;2;252;172;172m:7. [38;2;252;238;238mJr                       
+# [38;2;252;238;238m                   vv SB: iu                rL: .iBBBQEPqqPPqqqqqqqqqqqqqPPPPbQBBB:   .EBQKqqqqqqPPPqqKqPPgBB:  .B:                        
+# [38;2;252;238;238m                  :R  BgBL..s7            rU: .qBBEKPqqqqqqqqqqqqqqqqqqqqqqqqqPPPEBBB:   EBEPPPEgQBBQEPqqqqKEBB: .s                        
+# [38;2;252;238;238m               .U7.  iBZBBBi :ji         5r .MBQqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPKgBB:  .BBBBBdJrrSBBQKqqqqKZB7  I:                      
+# [38;2;252;238;238m              v2. :rBBBB: .BB:.ru7:    :5. rBQqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBB:  :.        .5BKqqqqqqBB. Kr                     
+# [38;2;252;238;238m             .B .BBQBB.   .RBBr  :L77ri2  BBqPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPbBB   [38;2;252;172;172m.irrrrri  [38;2;252;238;238mQQqqqqqqKRB. 2i                    
+# [38;2;252;238;238m              27 :BBU  rBBBdB [38;2;252;172;172m iri::::: [38;2;252;238;238m.BQKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqKRBs[38;2;252;172;172mirrr7777L: [38;2;252;238;238m7BqqqqqqqXZB. BLv772i              
+# [38;2;252;238;238m               rY  PK  .:dPMB [38;2;252;172;172m.Y77777r.[38;2;252;238;238m:BEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPPBqi[38;2;252;172;172mirrrrrv: [38;2;252;238;238muBqqqqqqqqqgB  :.:. B:             
+# [38;2;252;238;238m                iu 7BBi  rMgB [38;2;252;172;172m.vrrrrri[38;2;252;238;238mrBEqKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQgi[38;2;252;172;172mirrrrv. [38;2;252;238;238mQQqqqqqqqqqXBb .BBB .s:.           
+# [38;2;252;238;238m                i7 BBdBBBPqbB [38;2;252;172;172m.vrrrri[38;2;252;238;238miDgPPbPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQDi[38;2;252;172;172mirr77 [38;2;252;238;238m:BdqqqqqqqqqqPB. rBB. .:iu7         
+# [38;2;252;238;238m                iX.:iBRKPqKXB.[38;2;252;172;172m 77rrr[38;2;252;238;238mi7QPBBBBPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPB7i[38;2;252;172;172mrr7r [38;2;252;238;238m.vBBPPqqqqqqKqBZ  BPBgri: 1B        
+# [38;2;252;238;238m                 ivr .BBqqKXBi [38;2;252;172;172mr7rri[38;2;252;238;238miQgQi   QZKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPEQi[38;2;252;172;172mirr7r.  [38;2;252;238;238miBBqPqqqqqqPB:.QPPRBBB LK        
+# [38;2;252;238;238m                   :I. iBgqgBZ [38;2;252;172;172m:7rr[38;2;252;238;238miJQPB.   gRqqqqqqqqPPPPPPPPqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqPQ7[38;2;252;172;172mirrr7vr.  [38;2;252;238;238mUBqqPPgBBQPBBKqqqKB  B         
+# [38;2;252;238;238m                     v7 .BBR: [38;2;252;172;172m.r7ri[38;2;252;238;238miggqPBrrBBBBBBBBBBBBBBBBBBQEPPqqPPPqqqqqqqqqqqqqqqqqqqqqqqqqPgPi[38;2;252;172;172mirrrr7v7  [38;2;252;238;238mrBPBBP:.LBbPqqqqqB. u.        
+# [38;2;252;238;238m                      .j. . [38;2;252;172;172m :77rr[38;2;252;238;238miiBPqPbBB::::::.....:::iirrSBBBBBBBQZPPPPPqqqqqqqqqqqqqqqqqqqqEQi[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.BB:     :BPqqqqqDB .B        
+# [38;2;252;238;238m                       YL [38;2;252;172;172m.i77rrrr[38;2;252;238;238miLQPqqKQJ. [38;2;252;172;172m ............       [38;2;252;238;238m..:irBBBBBBZPPPqqqqqqqPPBBEPqqqdRr[38;2;252;172;172mirrrrrr7v [38;2;252;238;238m.B  .iBB  dQPqqqqPBi Y:       
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172mrv7rrrrri[38;2;252;238;238miPgqqqqKZB.[38;2;252;172;172m.v77777777777777ri::..   [38;2;252;238;238m  ..:rBBBBQPPqqqqPBUvBEqqqPRr[38;2;252;172;172mirrrrrrvi[38;2;252;238;238m iB:RBBbB7 :BQqPqKqBR r7       
+# [38;2;252;238;238m                    iI.[38;2;252;172;172m.v7rrrrrrri[38;2;252;238;238midgqqqqqKB:[38;2;252;172;172m 77rrrrrrrrrrrrr77777777ri:..   [38;2;252;238;238m .:1BBBEPPB:   BbqqPQr[38;2;252;172;172mirrrr7vr[38;2;252;238;238m .BBBZPqqDB  .JBbqKPBi vi       
+# [38;2;252;238;238m                   :B [38;2;252;172;172miL7rrrrrrrri[38;2;252;238;238mibgqqqqqqBr[38;2;252;172;172m r7rrrrrrrrrrrrrrrrrrrrr777777ri:.  [38;2;252;238;238m .iBBBBi  .BbqqdRr[38;2;252;172;172mirr7v7: [38;2;252;238;238m.Bi.dBBPqqgB:  :BPqgB  B        
+# [38;2;252;238;238m                   .K.i[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238miZgqqqqqqEB [38;2;252;172;172m.vrrrrrrrrrrrrrrrrrrrrrrrrrrr777vv7i.  [38;2;252;238;238m :PBBBBPqqqEQ[38;2;252;172;172miir77:  [38;2;252;238;238m:BB:  .rBPqqEBB. iBZB. Rr        
+# [38;2;252;238;238m                    iM.:[38;2;252;172;172mv7rrrrrrrri[38;2;252;238;238mUQPqqqqqPBi[38;2;252;172;172m i7rrrrrrrrrrrrrrrrrrrrrrrrr77777i.   [38;2;252;238;238m.  :BddPqqqqEg[38;2;252;172;172miir7. [38;2;252;238;238mrBBPqBBP. :BXKqgB  BBB. 2r         
+# [38;2;252;238;238m                     :U:.[38;2;252;172;172miv77rrrrri[38;2;252;238;238mrBPqqqqqqPB: [38;2;252;172;172m:7777rrrrrrrrrrrrrrr777777ri.   [38;2;252;238;238m.:uBBBBZPqqqqqqPQL[38;2;252;172;172mirr77 [38;2;252;238;238m.BZqqPB:  qMqqPB. Yv:  Ur          
+# [38;2;252;238;238m                       1L:.[38;2;252;172;172m:77v77rii[38;2;252;238;238mqQPqqqqqPbBi [38;2;252;172;172m .ir777777777777777ri:..   [38;2;252;238;238m.:rBBBRPPPPPqqqqqqqgQ[38;2;252;172;172miirr7vr [38;2;252;238;238m:BqXQ: .BQPZBBq ...:vv.           
+# [38;2;252;238;238m                         LJi..[38;2;252;172;172m::r7rii[38;2;252;238;238mRgKPPPPqPqBB:.  [38;2;252;172;172m ............     [38;2;252;238;238m..:rBBBBPPqqKKKKqqqPPqPbB1[38;2;252;172;172mrvvvvvr  [38;2;252;238;238mBEEDQBBBBBRri. 7JLi              
+# [38;2;252;238;238m                           .jL[38;2;252;172;172m  777rrr[38;2;252;238;238mBBBBBBgEPPEBBBvri:::::::::irrrbBBBBBBDPPPPqqqqqqXPPZQBBBBr[38;2;252;172;172m.......[38;2;252;238;238m.:BBBBg1ri:....:rIr                 
+# [38;2;252;238;238m                            vI [38;2;252;172;172m:irrr:....[38;2;252;238;238m:rrEBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQQBBBBBBBBBBBBBQr[38;2;252;172;172mi:...:.   [38;2;252;238;238m.:ii:.. .:.:irri::                    
+# [38;2;252;238;238m                             71vi[38;2;252;172;172m:::irrr::....[38;2;252;238;238m    ...:..::::irrr7777777777777rrii::....  ..::irvrr7sUJYv7777v7ii..                         
+# [38;2;252;238;238m                               .i777i. ..:rrri77rriiiiiii:::::::...............:::iiirr7vrrr:.                                             
+# [38;2;252;238;238m                                                      .::::::::::::::::::::::::::::::                                                      [m
+# -----------------------------------------------------------------------------------------------------
+#            WRONG ANSWER FAIL!                                                                        
+#            Pattern No.   3                                                                  
+#            Your answer max:254 min:  0               					           
+#            Gold answer max:235 min: 28               					     
+# -----------------------------------------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(151)
+#    Time: 1095 ns  Iteration: 0  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task check_ans at PATTERN.sv line 151
+# WARNING: No extended dataflow license exists
+restart -f
+# Loading work.TESTBENCH
+# Loading work.Maxmin
+# Loading work.PATTERN
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:08 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# ** Error: (vlog-13069) Maxmin.sv(42): near ")": syntax error, unexpected ')', expecting ';' or ','.
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# End time: 19:47:08 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog *.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:47:56 on Oct 06,2024
+# vlog -reportprogress 300 Maxmin.sv PATTERN.sv TESTBENCH.sv 
+# -- Compiling module Maxmin
+# -- Compiling module PATTERN
+# ** Warning: ** while parsing file included at TESTBENCH.sv(3)
+# ** at PATTERN.sv(3): (vlog-2275) 'PATTERN' already exists and will be overwritten.
+# -- Compiling module PATTERN
+# -- Compiling module TESTBENCH
+# 
+# Top level modules:
+# 	TESTBENCH
+# End time: 19:47:56 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+run -all
+# GetModuleFileName: §ä¤£¨ì«ü©wªº¼Ò²Õ¡C
+# 
+# 
+# [37m                                                                                                                                          
+# [37m                                                                                [32m      :BBQvi.                                              
+# [37m                                                              .i7ssrvs7         [32m     BBBBBBBBQi                                           
+# [37m                        .:r7rrrr:::.        .::::::...   .i7vr:.      .B:       [32m    :BBBP :7BBBB.                                         
+# [37m                      .Kv.........:rrvYr7v7rr:.....:rrirJr.   .rgBBBBg  Bi      [32m    BBBB     BBBB                                         
+# [37m                     7Q  :rubEPUri:.       ..:irrii:..    :bBBBBBBBBBBB  B      [32m   iBBBv     BBBB       vBr                               
+# [37m                    7B  BBBBBBBBBBBBBBB::BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB :R     [32m   BBBBBKrirBBBB.     :BBBBBB:                            
+# [37m                   Jd .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: Bi    [32m  rBBBBBBBBBBBR.    .BBBM:BBB                             
+# [37m                  uZ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B    [32m  BBBB   .::.      EBBBi :BBU                             
+# [37m                 7B .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  B    [32m MBBBr           vBBBu   BBB.                             
+# [37m                .B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: JJ   [32m i7PB          iBBBBB.  iBBB                              
+# [37m                B. BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  Lu             [32m  vBBBBPBBBBPBBB7       .7QBB5i                
+# [37m               Y1 KBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi XBBBBBBBi :B            [32m :RBBB.  .rBBBBB.      rBBBBBBBB7              
+# [37m              :B .BBBBBBBBBBBBBsRBBBBBBBBBBBrQBBBBB. UBBBRrBBBBBBr 1BBBBBBBBB  B.          [32m    .       BBBB       BBBB  :BBBB             
+# [37m              Bi BBBBBBBBBBBBBi :BBBBBBBBBBE .BBK.  .  .   QBBBBBBBBBBBBBBBBBB  Bi         [32m           rBBBr       BBBB    BBBU            
+# [37m             .B .BBBBBBBBBBBBBBQBBBBBBBBBBBB       [38;2;242;172;172mBBv [37m.LBBBBBBBBBBBBBBBBBBBBBB. B7.:ii:   [32m           vBBB        .BBBB   :7i.            
+# [37m            .B  PBBBBBBBBBBBBBBBBBBBBBBBBBBBBbYQB. [38;2;242;172;172mBB: [37mBBBBBBBBBBBBBBBBBBBBBBBBB  Jr:::rK7 [32m             .7  BBB7   iBBBg                  
+# [37m           7M  PBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBB..i   .   v1                  [32mdBBB.   5BBBr                 
+# [37m          sZ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBBBBBB iD2BBQL.                 [32m ZBBBr  EBBBv     YBBBBQi     
+# [37m  .7YYUSIX5 .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBB. [37mBBBBBBBBBBBBBBBBBBBBBBBBY.:.      :B                 [32m  iBBBBBBBBD     BBBBBBBBB.   
+# [37m LB.        ..BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB. [38;2;242;172;172mBB: [37mBBBBBBBBBBBBBBBBBBBBBBBBMBBB. BP17si                 [32m    :LBBBr      vBBBi  5BBB   
+# [37m  KvJPBBB :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: [38;2;242;172;172mZB: [37mBBBBBBBBBBBBBBBBBBBBBBBBBsiJr .i7ssr:                [32m          ...   :BBB:   BBBu  
+# [37m i7ii:.   ::BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBj [38;2;242;172;172muBi [37mQBBBBBBBBBBBBBBBBBBBBBBBBi.ir      iB                [32m         .BBBi   BBBB   iMBu  
+# [37mDB    .  vBdBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBg [38;2;242;172;172m7Bi [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBB rBrXPv.                [32m          BBBX   :BBBr        
+# [37m :vQBBB. BQBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBQ [38;2;242;172;172miB: [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .L:ii::irrrrrrrr7jIr   [32m          .BBBv  :BBBQ        
+# [37m :7:.   .. 5BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mBr [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBB:            ..... ..YB. [32m           .BBBBBBBBB:        
+# [37mBU  .:. BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  [38;2;242;172;172mB7 [37mgBBBBBBBBBBBBBBBBBBBBBBBBBB. gBBBBBBBBBBBBBBBBBB. BL [32m             rBBBBB1.         
+# [37m rY7iB: BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: [38;2;242;172;172mB7 [37mBBBBBBBBBBBBBBBBBBBBBBBBBB. QBBBBBBBBBBBBBBBBBi  v5                                
+# [37m     us EBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB [38;2;242;172;172mIr [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBgu7i.:BBBBBBBr Bu                                 
+# [37m      B  7BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB.[38;2;242;172;172m:i [37mBBBBBBBBBBBBBBBBBBBBBBBBBBBv:.  .. :::  .rr    rB                                  
+# [37m      us  .BBBBBBBBBBBBBQLXBBBBBBBBBBBBBBBBBBBBBBBBq  .BBBBBBBBBBBBBBBBBBBBBBBBBv  :iJ7vri:::1Jr..isJYr                                   
+# [37m      B  BBBBBBB  MBBBM      qBBBBBBBBBBBBBBBBBBBBBB: BBBBBBBBBBBBBBBBBBBBBBBBBB  B:           iir:                                       
+# [37m     iB iBBBBBBBL       BBBP. :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  B.                                                       
+# [37m     P: BBBBBBBBBBB5v7gBBBBBB  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: Br                                                        
+# [37m     B  BBBs 7BBBBBBBBBBBBBB7 :BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B                                                         
+# [37m    .B :BBBB.  EBBBBBQBBBBBJ .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB. B.                                                         
+# [37m    ij qBBBBBg          ..  .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB .B                                                          
+# [37m    UY QBBBBBBBBSUSPDQL...iBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBK EL                                                          
+# [37m    B7 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB: B:                                                          
+# [37m    B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBYrBB vBBBBBBBBBBBBBBBBBBBBBBBB. Ls                                                          
+# [37m    B  BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBi_  /UBBBBBBBBBBBBBBBBBBBBBBBBB. :B:                                                        
+# [37m   rM .BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB  ..IBBBBBBBBBBBBBBBBQBBBBBBBBBB  B                                                        
+# [37m   B  BBBBBBBBBdZBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBPBBBBBBBBBBBBEji:..     sBBBBBBBr Br                                                       
+# [37m  7B 7BBBBBBBr     .:vXQBBBBBBBBBBBBBBBBBBBBBBBBBQqui::..  ...i:i7777vi  BBBBBBr Bi                                                       
+# [37m  Ki BBBBBBB  rY7vr:i....  .............:.....  ...:rii7vrr7r:..      7B  BBBBB  Bi                                                       
+# [37m  B. BBBBBB  B:    .::ir77rrYLvvriiiiiiirvvY7rr77ri:..                 bU  iQBB:..rI                                                      
+# [37m.S: 7BBBBP  B.                                                          vI7.  .:.  B.                                                     
+# [37mB: ir:.   :B.                                                             :rvsUjUgU.                                                      
+# [37mrMvrrirJKur                                                                                                                               [m
+# ----------------------------------------------------------------------------------------------------------------------
+#                                                   Congratulations!                						             
+#                                            You have passed all patterns!          						             
+# ----------------------------------------------------------------------------------------------------------------------
+# ** Note: $finish    : PATTERN.sv(212)
+#    Time: 175095 ns  Iteration: 1  Instance: /TESTBENCH/I_PATTERN
+# 1
+# Break in Task YOU_PASS_task at PATTERN.sv line 212
+transcript file
+# Maxmin.log
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"

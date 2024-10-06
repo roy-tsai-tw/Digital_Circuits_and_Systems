@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/modelsim/DCS2021/Lab03
+vMaxmin
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1728215276
+!i10b 1
+!s100 Dkc0?<>??@CR4z@oPhCl13
+IUAIk`Dmb@Q^>2PHd3U]e52
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Maxmin_sv_unit
+S1
+R0
+w1728215262
+8Maxmin.sv
+FMaxmin.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1728215276.000000
+Z6 !s107 TESTBENCH.sv|PATTERN.sv|Maxmin.sv|
+Z7 !s90 -reportprogress|300|Maxmin.sv|PATTERN.sv|TESTBENCH.sv|
+!i113 1
+Z8 tCvgOpt 0
+n@maxmin
+vPATTERN
+R1
+R2
+!i10b 1
+!s100 cKHF1D9mkHBiIcY@Ub]Zl0
+IGaYgj8X2?bbLk3@^nRSSU3
+R3
+Z9 !s105 TESTBENCH_sv_unit
+S1
+R0
+Z10 w1706313099
+8PATTERN.sv
+FPATTERN.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@p@a@t@t@e@r@n
+vTESTBENCH
+R1
+R2
+!i10b 1
+!s100 iUi6a8L32;SQL5ChgI>zP0
+IWfm2oh5Y=in`[VkBQ5An30
+R3
+R9
+S1
+R0
+R10
+8TESTBENCH.sv
+FTESTBENCH.sv
+L0 10
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@t@e@s@t@b@e@n@c@h
